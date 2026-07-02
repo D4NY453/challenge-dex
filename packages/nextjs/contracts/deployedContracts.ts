@@ -734,7 +734,7 @@ const deployedContracts = {
   },
   11155111: {
     Balloons: {
-      address: "0xa2ebe2b22e3bbbcf7ee9b6b407815778a83b3788",
+      address: "0x2b0d8c94122acf36e80990ea544a2dbeb4cae831",
       abi: [
         {
           inputs: [],
@@ -1061,10 +1061,10 @@ const deployedContracts = {
         transfer: "npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
         transferFrom: "npm/@openzeppelin/contracts@5.6.1/token/ERC20/ERC20.sol",
       },
-      deployedOnBlock: 11188058,
+      deployedOnBlock: 11188452,
     },
     DEX: {
-      address: "0x3cf7c2e727441012d3192000e1b467f836eb0db8",
+      address: "0x5098599d164dfecc826fff38c7ca29de6ae8fd4e",
       abi: [
         {
           inputs: [
@@ -1456,7 +1456,7 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11188059,
+      deployedOnBlock: 11188453,
     },
   },
 } as const;
