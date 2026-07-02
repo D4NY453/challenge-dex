@@ -127,22 +127,22 @@
 @plugin "daisyui/theme" {
   name: "light";
 
-  --color-primary: #c8f5ff;
-  --color-primary-content: #026262;
-  --color-secondary: #89d7e9;
-  --color-secondary-content: #088484;
-  --color-accent: #026262;
-  --color-accent-content: #e9fbff;
-  --color-neutral: #088484;
-  --color-neutral-content: #f0fcff;
-  --color-base-100: #f0fcff;
-  --color-base-200: #e1faff;
-  --color-base-300: #c8f5ff;
-  --color-base-content: #088484;
-  --color-info: #026262;
-  --color-success: #34eeb6;
-  --color-warning: #ffcf72;
-  --color-error: #ff8863;
+  --color-primary: #6366f1;
+  --color-primary-content: #ffffff;
+  --color-secondary: #f3f4f6;
+  --color-secondary-content: #1f2937;
+  --color-accent: #4b5563;
+  --color-accent-content: #ffffff;
+  --color-neutral: #1f2937;
+  --color-neutral-content: #f9fafb;
+  --color-base-100: #ffffff;
+  --color-base-200: #f3f4f6;
+  --color-base-300: #e5e7eb;
+  --color-base-content: #1f2937;
+  --color-info: #3b82f6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
 
   /* radius / button rounding */
   --radius-field: 9999rem;
@@ -156,28 +156,43 @@
 @plugin "daisyui/theme" {
   name: "dark";
 
-  --color-primary: #026262;
-  --color-primary-content: #c8f5ff;
-  --color-secondary: #107575;
-  --color-secondary-content: #e9fbff;
-  --color-accent: #c8f5ff;
-  --color-accent-content: #088484;
-  --color-neutral: #e9fbff;
-  --color-neutral-content: #11acac;
-  --color-base-100: #11acac;
-  --color-base-200: #088484;
-  --color-base-300: #026262;
-  --color-base-content: #e9fbff;
-  --color-info: #c8f5ff;
-  --color-success: #34eeb6;
-  --color-warning: #ffcf72;
-  --color-error: #ff8863;
+  --color-primary: #8b5cf6;
+  --color-primary-content: #ffffff;
+  --color-secondary: #1f2937;
+  --color-secondary-content: #f3f4f6;
+  --color-accent: #3b82f6;
+  --color-accent-content: #ffffff;
+  --color-neutral: #0f172a;
+  --color-neutral-content: #f8fafc;
+  --color-base-100: #111827;
+  --color-base-200: #0b0f19;
+  --color-base-300: #1f2937;
+  --color-base-content: #f3f4f6;
+  --color-info: #8b5cf6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
 
   --radius-field: 9999rem;
   --radius-box: 1rem;
 
   --tt-tailw: 6px;
   --tt-bg: var(--color-primary); /* if you need a tooltip bg override */
+}
+
+/* Custom 3D Perspective Grid Background */
+.bg-grid-3d {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(139, 92, 246, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(139, 92, 246, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transform: perspective(500px) rotateX(65deg) translateY(-180px) translateZ(-80px);
+  transform-origin: top center;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+  pointer-events: none;
+  opacity: 0.85;
 }
 
 @theme inline {

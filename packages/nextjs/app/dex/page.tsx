@@ -116,6 +116,9 @@ const Dex: NextPage = () => {
       {/* Background Ambient Glows */}
       <div className="absolute top-20 left-1/4 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-20 right-1/4 w-[600px] h-[600px] bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
+      
+      {/* 3D Perspective Grid Background Layer */}
+      <div className="bg-grid-3d" />
 
       {/* Main Container */}
       <div className="max-w-7xl mx-auto relative z-10">
